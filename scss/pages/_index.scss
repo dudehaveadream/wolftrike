@@ -1,0 +1,236 @@
+.top-section {
+    background: url(../img/bg/top_bg.jpg) center;
+    @include background-size (cover);
+    text-align: center;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: rgba(74,131,157,.7);
+        width: 100%;
+        height: 150px;
+    }
+}
+.top-main {
+    border-bottom: 15px solid $white;
+    &:after {
+        bottom: -15px;
+    }
+    &:before {
+        content: '';
+        width: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid $white;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -10px;
+    }
+    .header {
+        position: relative;
+    }
+    .header-logo {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -136px;
+        @media #{$mobile} {
+            position: static;
+            display: block;
+            margin-left: 0;
+            margin-bottom: 25px;
+        }
+    }
+
+    &-inner {
+        padding-top: 25px;
+        padding-bottom: 340px;
+        .divider {
+            margin: 20px 0 35px;
+            span {
+                background: $gray;
+            }
+        }
+        p {
+            font-family: 'NexaLight';
+            font-size: 30px;
+            color: $gray;
+            margin: 10px 0;
+        }
+    }
+    .scroll-down {
+        position: absolute;
+        left: 0;
+        bottom: 60px;
+        width: 100%;
+        text-align: center;
+        z-index: 10;
+        a {
+            color: #ffffff;
+            position: relative;
+            display: inline-block;
+            img {
+                margin: 0 5px;
+            }
+            &:before, &:after {
+                content: '';
+                width: 61px;
+                position: absolute;
+                left: 50%;
+                margin-left: -30px;
+            }
+            &:before {
+                background: url(../img/icons/scroll_down_before.png) no-repeat;
+                height: 20px;
+                top: -25px;
+            }
+            &:after {
+                background: url(../img/icons/scroll_down_after.png) no-repeat;
+                height: 28px;
+                bottom: -33px;
+            }
+        }
+    }
+}
+.whatis-section {
+    background: url(../img/bg/whatis_bg.jpg) center;
+    @include background-size (cover);
+    border-top: 15px solid $white;
+    padding: 60px 0 90px;
+    p {
+        font-family: 'KiroExtraLight';
+        font-size: 25px;
+        color: $white;
+        text-align: center;
+    }
+}
+.traits-section {
+    background: url(../img/bg/traits_bg.jpg) center;
+    @include background-size (cover);
+    padding: 60px 0 40px;
+    text-align: center;
+    .image-holder {
+        margin-bottom: 15px;
+        height: 115px;
+        line-height: 115px;
+        img {
+            vertical-align: bottom;
+        }
+    }
+    p {
+        font-family: 'KiroBold';
+        font-size: 19px;
+        color: #ececec;
+    }
+    @media #{$mobile} {
+      .traits-section-item {
+        margin-bottom: 20px;
+      }
+    }
+}
+
+.story-section {
+    background: #2a2a2a;
+    padding: 80px 0 240px;
+    overflow: hidden;
+    .story-left {
+        &-inner {
+            display: inline-block;
+            position: relative;
+            .item {
+                position: absolute;
+                top: 115px;
+                left: 0;
+            }
+        }
+        @media #{$tablet} {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+    }
+    .story-right {
+        text-align: right;
+        h4 {
+            color: #d4e2e8;
+        }
+        .divider {
+            text-align: right;
+            margin: 5px 0 10px;
+            span {
+                background: #d4e2e8;
+                width: 30px;
+            }
+        }
+        p {
+            font-family: 'KiroExtraLight';
+            font-size: 25px;
+            color: #d4e2e8;
+        }
+        @media #{$tablet} {
+            text-align: center;
+            .divider {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.green-section {
+    background: url(../img/bg/green_bg.jpg) top;
+    @include background-size (cover);
+    padding: 105px 0 55px;
+    text-align: center;
+    h3 {
+        color: #fcfcfc;
+        margin-bottom: 20px;
+    }
+    p {
+        color: $white;
+        font-family: 'KiroExtraLight';
+        font-size: 23px;
+    }
+    .eco {
+        margin-top: 80px;
+        text-align: left;
+        p {
+            padding-right: 110px;
+        }
+        img {
+            float: right;
+        }
+    }
+    .green-bottom {
+        margin-top: 200px;
+        p {
+            color: #2b2b2b;
+            margin-bottom: 20px;
+        }
+        .social {
+            margin-top: 35px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

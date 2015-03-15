@@ -1,0 +1,42 @@
+.header {
+    @include clearfix;
+    padding-top: 28px;
+    &-logo {
+        float: left;
+        p {
+            font-family: 'NexaSlabBold';
+            font-size: 16px;
+            color: $white;
+            margin-top: 10px;
+        }
+        @media #{$mobile} {
+            float: none;
+            display: block;
+        }
+    }
+    &-menu {
+        float: right;
+        &-item {
+            @include clearfix;
+            @include transition (all, 0.3s, linear);
+            display: inline-block;
+            width: 72px;
+            height: 72px;
+            line-height: 65px;
+            background: #34474f;
+            margin-left: 6px;
+            img {
+                vertical-align: middle;
+            }
+            &:hover, &.active {
+                background: #2e708b;
+            }
+        }
+        @media #{$mobile} {
+            float: none;
+            &-item {
+                float: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.footer-inner {
+    background: url(../img/bg/footer_bg.jpg) center;
+    @include background-size (cover);
+    text-align: center;
+    padding: 85px 0 30px;
+}
+.footer-bottom {
+    background: #dddddd;
+    text-align: center;
+    padding: 7px 0;
+    position: relative;
+    &:after {
+        content: '';
+        width: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 15px solid #dddddd;
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -15px;
+    }
+    p {
+        font-size: 13px;
+        color: #232221;
+        letter-spacing: 4px;
+    }
+}

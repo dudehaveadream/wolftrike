@@ -9,4 +9,69 @@ body {
     font-family: 'KiroRegular';
     border-top: 5px solid $white;
 }
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'NexaSlabBold';
+    color: $gray;
+}
+h1 {
+    font-size: 80px;
+}
+h2 {
+    font-size: 54px;
+}
+h3 {
+    font-size: 50px;
+}
+h4 {
+    font-size: 27px;
+}
 
+.social {
+    white-space: nowrap;
+    font-family:"Socialico";
+    a {
+        font-size: 50px;
+        color: #656563;
+        @include transition (all, 0.3s, linear);
+    }
+}
+.social.green {
+    a:hover {
+        color: #2e952c;
+    }
+}
+
+.divider {
+    text-align: center;
+    span {
+        display: inline-block;
+        width: 60px;
+        height: 7px;
+    }
+}
+
+
+
+.btn-big {
+    display: inline-block;
+    background: rgba(255,255,255,.3);
+    padding: 20px 35px;
+    font-family: 'NexaBold';
+    font-size: 31px;
+    text-decoration: none;
+    text-transform: uppercase;
+    @include border-radius (20px 0 20px 0);
+    border: {
+        width: 3px;
+        style: solid;
+    }
+    &-black {
+        border-color: #04283b;
+        color: $gray;
+    }
+    &-green {
+        border-color: #30a42e;
+        color: $gray;
+        padding: 12px 35px;
+    }
+}

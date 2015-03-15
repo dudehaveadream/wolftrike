@@ -1,4 +1,22 @@
 @font-face {
+    font-family:"Socialico";
+    src:url("../fonts/Socialico.eot?") format("eot"),
+    url("../fonts/Socialico.woff") format("woff"),
+    url("../fonts/Socialico.ttf") format("truetype"),
+    url("../fonts/Socialico.svg#Socialico") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: 'KiroExtraLight';
+    src: url('../fonts/KiroExtraLight.eot');
+    src: url('../fonts/KiroExtraLight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/KiroExtraLight.woff') format('woff'),
+         url('../fonts/KiroExtraLight.ttf') format('truetype'),
+         url('../fonts/KiroExtraLight.otf') format('otf');
+}
+@font-face {
     font-family: 'KiroLight';
     src: url('../fonts/KiroLight.eot');
     src: url('../fonts/KiroLight.eot?#iefix') format('embedded-opentype'),

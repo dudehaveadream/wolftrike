@@ -1,0 +1,73 @@
+.top-contacts {
+    .header {
+        @media #{$mobile} {
+            &-logo img {
+                width: 250px;
+            }
+        }
+    }
+    &:after {
+        height: 120px;
+    }
+    &-inner {
+        padding-top: 75px;
+        padding-bottom: 300px;
+        h4 {
+            font-size: 31px;
+            color: #224e61;
+            text-transform: uppercase;
+        }
+        h5 {
+            font-size: 19px;
+            color: #224e61;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 5px;
+        }
+        .divider {
+            span {
+                background: #2b5c70;
+                width: 45px;
+            }
+        }
+        .success {
+            @include border-radius (2px);
+            margin: 25px 0;
+            background: url(../img/icons/success.png) no-repeat center, #33738e;
+            padding: 10px 5px;
+            font-family: 'KiroLight';
+            font-size: 31px;
+            color: #fbf8f0;
+            text-transform: uppercase;
+            font-style: italic;
+        }
+        .btn-holder {
+            position: relative;
+            .btn-big {
+                width: 100%;
+            }
+            span {
+                font-family: 'KiroLight';
+                position: absolute;
+                left: 0;
+                bottom: 28px;
+                background: #397791;
+                font-size: 15px;
+                color: $white;
+                padding: 3px 8px;
+                letter-spacing: 2px;
+                text-transform: none;
+                @media #{$mobile} {
+                    bottom: 3px;
+                }
+            }
+        }
+        .social {
+            position: absolute;
+            left: 0;
+            bottom: 40px;
+            width: 100%;
+            z-index: 10;
+        }
+    }
+}

@@ -5,6 +5,41 @@
 /* Sass utilities */
 /*Mixins*/
 /* Base stuff */
+@font-face {
+  font-family: 'KiroLight';
+  src: url("../fonts/KiroLight.eot");
+  src: url("../fonts/KiroLight.eot?#iefix") format("embedded-opentype"), url("../fonts/KiroLight.woff") format("woff"), url("../fonts/KiroLight.ttf") format("truetype"), url("../fonts/KiroLight.otf") format("otf");
+}
+@font-face {
+  font-family: 'KiroRegular';
+  src: url("../fonts/KiroRegular.eot");
+  src: url("../fonts/KiroRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/KiroRegular.woff") format("woff"), url("../fonts/KiroRegular.ttf") format("truetype"), url("../fonts/KiroRegular.otf") format("otf");
+}
+@font-face {
+  font-family: 'KiroBold';
+  src: url("../fonts/KiroBold.eot");
+  src: url("../fonts/KiroBold.eot?#iefix") format("embedded-opentype"), url("../fonts/KiroBold.woff") format("woff"), url("../fonts/KiroBold.ttf") format("truetype"), url("../fonts/KiroBold.otf") format("otf");
+}
+@font-face {
+  font-family: 'NexaLight';
+  src: url("../fonts/NexaLight.eot");
+  src: url("../fonts/NexaLight.eot?#iefix") format("embedded-opentype"), url("../fonts/NexaLight.woff") format("woff"), url("../fonts/NexaLight.ttf") format("truetype"), url("../fonts/NexaLight.otf") format("otf");
+}
+@font-face {
+  font-family: 'NexaBold';
+  src: url("../fonts/NexaBold.eot");
+  src: url("../fonts/NexaBold.eot?#iefix") format("embedded-opentype"), url("../fonts/NexaBold.woff") format("woff"), url("../fonts/NexaBold.ttf") format("truetype"), url("../fonts/NexaBold.otf") format("otf");
+}
+@font-face {
+  font-family: 'NexaSlabRegular';
+  src: url("../fonts/NexaSlabRegular.eot");
+  src: url("../fonts/NexaSlabRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/NexaSlabRegular.woff") format("woff"), url("../fonts/NexaSlabRegular.ttf") format("truetype"), url("../fonts/NexaSlabRegular.otf") format("otf");
+}
+@font-face {
+  font-family: 'NexaSlabBold';
+  src: url("../fonts/NexaSlabBold.eot");
+  src: url("../fonts/NexaSlabBold.eot?#iefix") format("embedded-opentype"), url("../fonts/NexaSlabBold.woff") format("woff"), url("../fonts/NexaSlabBold.ttf") format("truetype"), url("../fonts/NexaSlabBold.otf") format("otf");
+}
 /* Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -68,6 +103,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'KiroRegular';
+  border-top: 5px solid #ffffff;
 }
 
 /* Layout related stylesheets* */

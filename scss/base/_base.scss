@@ -108,6 +108,7 @@ textarea {
 }
 
 .social {
+    text-align: center;
     white-space: nowrap;
     font-family:"Socialico";
     a {
@@ -115,6 +116,11 @@ textarea {
         font-size: 50px;
         color: #656563;
         @include transition (all, 0.3s, linear);
+    }
+}
+.social.blue {
+    a:hover {
+        color: #3b7492;
     }
 }
 .social.green {
@@ -191,6 +197,14 @@ textarea {
         border-color: #0a3348;
         &:hover {
           background: #184b66;
+        }
+    }
+    &-orange {
+        background: #e99235;
+        color: $white;
+        border-color: #04283b;
+        &:hover {
+          background: #9c580f;
         }
     }
 }

@@ -1,12 +1,15 @@
 .thanks-section {
     &-inner {
-        padding: 100px 0 30px;
+        padding: 100px 0;
         .container {
             overflow: hidden;
         }
+        @media #{$mobile} {
+            padding: 100px 0 30px;
+        }
     }
     .title {
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
     .thanks-content {
         max-width: 670px;

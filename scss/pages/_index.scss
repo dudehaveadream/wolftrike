@@ -190,6 +190,7 @@
 }
 
 .gallery-section {
+    border-bottom: 7px solid #7ca2b2;
     overflow: hidden;
     .gallery {
         img {
@@ -431,7 +432,7 @@
         left: 0;
         top: 100%;
         width: 100%;
-        height: 16px;
+        height: 20px;
         background: url(../img/bg/shape_bg.png) center;
     }
     &:before {
@@ -441,7 +442,7 @@
         height: 99px;
         position: absolute;
         left: 50%;
-        bottom: -55px;
+        bottom: -58px;
         margin-left: -42px;
         z-index: 10;
     }

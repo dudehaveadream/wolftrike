@@ -1,6 +1,11 @@
 .header {
     @include clearfix;
     padding-top: 28px;
+    padding-bottom: 20px;
+    &-single {
+        background: url(../img/bg/header_bg.jpg) center;
+        @include background-size (cover);
+    }
     &-logo {
         float: left;
         p {
@@ -9,10 +14,27 @@
             color: $white;
             margin-top: 10px;
         }
+        &-left {
+            position: relative;
+        }
+        &-left:after {
+            content: '';
+            width: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid $white;
+            position: absolute;
+            top: -30px;
+            left: 69px;
+        }
         @media #{$mobile} {
             float: none;
             display: block;
             margin-bottom: 20px;
+            &-left:after {
+                left: 50%;
+                margin-left: -10px;
+            }
         }
     }
     &-menu {
@@ -21,6 +43,7 @@
             @include clearfix;
             @include transition (all, 0.3s, linear);
             display: inline-block;
+            text-align: center;
             width: 72px;
             height: 72px;
             line-height: 65px;
@@ -39,5 +62,11 @@
                 float: none;
             }
         }
+    }
+    @media #{$mobile} {
+        text-align: center;
+            &-logo img {
+                width: 250px;
+            }
     }
 }

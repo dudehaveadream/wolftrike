@@ -1,0 +1,47 @@
+.thanks-section {
+    &-inner {
+        padding: 100px 0 30px;
+        .container {
+            overflow: hidden;
+        }
+    }
+    .title {
+        margin-bottom: 20px;
+    }
+    .thanks-content {
+        max-width: 670px;
+        margin: auto;
+        padding: 90px 0 80px;
+        text-align: center;
+        background: url(../img/icons/thanks_logo.png) no-repeat top center;
+        h3 {
+            font-family: 'KiroRegular';
+            font-size: 49px;
+            text-transform: uppercase;
+            color: #3a657b;
+        }
+        h4 {
+            font-family: 'KiroLight';
+            font-size: 29px;
+            color: #3a657b;
+            margin-bottom: 20px;
+        }
+        hr {
+            border-color: #acacac;
+            margin: 10px 0;
+        }
+        p {
+            font-family: 'KiroLight';
+            font-size: 21px;
+            text-transform: uppercase;
+            color: #66757d;
+        }
+        .btn-small {
+            margin-bottom: 10px;
+        }
+        @media #{$mobile} {
+            background-size: 80%;
+            background-position: center center;
+        }
+    }
+}

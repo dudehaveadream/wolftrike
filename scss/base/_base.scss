@@ -26,6 +26,33 @@ h4 {
     font-size: 27px;
 }
 
+h5.title {
+  text-align: center;
+  span {
+    position: relative;
+    font-family: 'KiroBold';
+    font-size: 20px;
+    color: #42687c;
+    text-transform: uppercase;
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      top: 12px;
+      height: 1px;
+      width: 1500px;
+      background: #42687c;
+    }
+    &:before {
+      right: 100%;
+      margin-right: 15px;
+    }
+    &:after {
+      left: 100%;
+      margin-left: 15px;
+    }
+  }
+}
+
 %label-movement {
   font-size: 15px;
   color: #33738e;
@@ -146,3 +173,38 @@ textarea {
         color: #296077;
     }
 }
+.btn-small {
+    display: inline-block;
+    font-family: 'NexaBold';
+    font-size: 17px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    @include border-radius (10px 0 10px 0);
+    @include transition (all, 0.3s, linear);
+    border: {
+        width: 3px;
+        style: solid;
+    }
+    &-blue {
+        background: #3b7492;
+        color: $white;
+        border-color: #0a3348;
+        &:hover {
+          background: #184b66;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

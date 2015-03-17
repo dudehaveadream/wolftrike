@@ -1,0 +1,123 @@
+.shop-items {
+    &-inner {
+        padding: 100px 0 40px;
+        text-align: center;
+        .title-holder {
+            overflow: hidden;
+        }
+        .title {
+            margin-bottom: 25px;
+        }
+    }
+    &-single {
+        border: 1px solid #919191;
+        padding-bottom: 90px;
+        margin-bottom: 20px;
+        min-height: 410px;
+        position: relative;
+        @include border-radius (3px);
+        @include box-shadow (4px 4px 0 0 #e7e7e7);
+    }
+    &-title {
+        font-family: "KiroBold";
+        font-size: 33px;
+        color: #f4f7fc;
+        text-transform: uppercase;
+        padding: 15px 5px;
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            width: 0;
+            margin-left: -9px;
+            border-left: 9px solid transparent;
+            border-right: 9px solid transparent;
+        }
+        &.blue {
+            background: #558ba7;
+            &:after {
+                border-top: 5px solid #558ba7;
+            }
+        }
+    }
+    &-content {
+        padding: 30px 40px 45px;
+        border-top: 1px solid #cbcbcb;
+        p {
+            font-size: 19px;
+            color: #515151;
+            letter-spacing: 2px;
+        }
+        p.choice {
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        .sod_select {
+            width: 120px;
+            font-family: "KiroLight";
+            font-size: 19px;
+            color: #758086;
+            border-radius: 0;
+            padding: 5px 15px;
+            border-color: #7d7d7d;
+            &:after {
+                border-color: #7d7d7d;
+                padding: 8px 8px 0;
+            }
+            .sod_list_wrapper {
+                width: 91px;
+                left: -1px;
+                border-color: #7d7d7d;
+            }
+            .sod_option {
+                padding: 5px 15px;
+            }
+        }
+    }
+    &-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 90px;
+        width: 100%;
+        background: #558ba7;
+        .btn-small {
+            padding: 10px 50px;
+            display: block;
+            max-width: 240px;
+            margin: -20px auto 0;
+        }
+    }
+    &-price {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #3b7492;
+        padding: 11px 0;
+        font-family: "KiroLight";
+        font-size: 31px;
+        color: $white;
+        &:before, &:after {
+            content: '';
+            position: absolute;
+            top: 24px;
+            background: url(../img/icons/lines.png) no-repeat;
+            width: 17px;
+            height: 10px;
+        }
+        &:before {
+            left: 10%;
+        }
+        &:after {
+            right: 10%;
+        }
+    }
+}
+.shop-items-section {
+    .carousel-holder {
+        padding: 15px 0;
+    }
+}

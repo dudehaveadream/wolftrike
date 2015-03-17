@@ -393,6 +393,14 @@ textarea {
 .btn-small-orange:hover {
   background: #9c580f;
 }
+.btn-small-green {
+  background: #90b83a;
+  color: #ffffff;
+  border-color: #04283b;
+}
+.btn-small-green:hover {
+  background: #749925;
+}
 
 /* Layout related stylesheets* */
 .header {
@@ -1739,4 +1747,130 @@ textarea {
 .cart-form-checkout .btn-holder .btn-small {
   float: right;
   padding: 10px 40px;
+}
+
+.shop-items-inner {
+  padding: 100px 0 40px;
+  text-align: center;
+}
+.shop-items-inner .title-holder {
+  overflow: hidden;
+}
+.shop-items-inner .title {
+  margin-bottom: 25px;
+}
+.shop-items-single {
+  border: 1px solid #919191;
+  padding-bottom: 90px;
+  margin-bottom: 20px;
+  min-height: 410px;
+  position: relative;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 4px 4px 0 0 #e7e7e7;
+  -moz-box-shadow: 4px 4px 0 0 #e7e7e7;
+  box-shadow: 4px 4px 0 0 #e7e7e7;
+}
+.shop-items-title {
+  font-family: "KiroBold";
+  font-size: 33px;
+  color: #f4f7fc;
+  text-transform: uppercase;
+  padding: 15px 5px;
+  position: relative;
+}
+.shop-items-title:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  margin-left: -9px;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+}
+.shop-items-title.blue {
+  background: #558ba7;
+}
+.shop-items-title.blue:after {
+  border-top: 5px solid #558ba7;
+}
+.shop-items-content {
+  padding: 30px 40px 45px;
+  border-top: 1px solid #cbcbcb;
+}
+.shop-items-content p {
+  font-size: 19px;
+  color: #515151;
+  letter-spacing: 2px;
+}
+.shop-items-content p.choice {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.shop-items-content .sod_select {
+  width: 120px;
+  font-family: "KiroLight";
+  font-size: 19px;
+  color: #758086;
+  border-radius: 0;
+  padding: 5px 15px;
+  border-color: #7d7d7d;
+}
+.shop-items-content .sod_select:after {
+  border-color: #7d7d7d;
+  padding: 8px 8px 0;
+}
+.shop-items-content .sod_select .sod_list_wrapper {
+  width: 91px;
+  left: -1px;
+  border-color: #7d7d7d;
+}
+.shop-items-content .sod_select .sod_option {
+  padding: 5px 15px;
+}
+.shop-items-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 90px;
+  width: 100%;
+  background: #558ba7;
+}
+.shop-items-bottom .btn-small {
+  padding: 10px 50px;
+  display: block;
+  max-width: 240px;
+  margin: -20px auto 0;
+}
+.shop-items-price {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #3b7492;
+  padding: 11px 0;
+  font-family: "KiroLight";
+  font-size: 31px;
+  color: #ffffff;
+}
+.shop-items-price:before, .shop-items-price:after {
+  content: '';
+  position: absolute;
+  top: 24px;
+  background: url(../img/icons/lines.png) no-repeat;
+  width: 17px;
+  height: 10px;
+}
+.shop-items-price:before {
+  left: 10%;
+}
+.shop-items-price:after {
+  right: 10%;
+}
+
+.shop-items-section .carousel-holder {
+  padding: 15px 0;
 }

@@ -246,6 +246,14 @@ textarea {
           background: #9c580f;
         }
     }
+    &-green {
+        background: #90b83a;
+        color: $white;
+        border-color: #04283b;
+        &:hover {
+          background: #749925;
+        }
+    }
 }
 
 

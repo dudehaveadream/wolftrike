@@ -365,6 +365,7 @@ textarea {
   font-size: 17px;
   padding: 10px 20px;
   text-transform: uppercase;
+  color: #ffffff;
   -webkit-border-radius: 10px 0 10px 0;
   -moz-border-radius: 10px 0 10px 0;
   -ms-border-radius: 10px 0 10px 0;
@@ -379,7 +380,6 @@ textarea {
 }
 .btn-small-blue {
   background: #3b7492;
-  color: #ffffff;
   border-color: #0a3348;
 }
 .btn-small-blue:hover {
@@ -387,19 +387,24 @@ textarea {
 }
 .btn-small-orange {
   background: #e99235;
-  color: #ffffff;
   border-color: #04283b;
 }
 .btn-small-orange:hover {
-  background: #9c580f;
+  background: #ca7a24;
 }
 .btn-small-green {
   background: #90b83a;
-  color: #ffffff;
   border-color: #04283b;
 }
 .btn-small-green:hover {
   background: #749925;
+}
+.btn-small-red {
+  background: #e6555a;
+  border-color: #04283b;
+}
+.btn-small-red:hover {
+  background: #c43c41;
 }
 
 /* Layout related stylesheets* */
@@ -775,9 +780,9 @@ textarea {
 
 .hexagon {
   position: relative;
-  width: 23px;
-  height: 13.28px;
-  margin: 6.64px 0;
+  width: 35px;
+  height: 20.21px;
+  margin: 10.10px 0;
   border-left: solid 1px #c7c7b2;
   border-right: solid 1px #c7c7b2;
 }
@@ -787,29 +792,49 @@ textarea {
   content: "";
   position: absolute;
   z-index: 1;
-  width: 16.26px;
-  height: 16.26px;
+  width: 24.75px;
+  height: 24.75px;
   -webkit-transform: scaleY(0.5774) rotate(-45deg);
   -ms-transform: scaleY(0.5774) rotate(-45deg);
   transform: scaleY(0.5774) rotate(-45deg);
   background-color: inherit;
-  left: 2.3683px;
+  left: 4.1256px;
 }
 
 .hexagon:before {
-  top: -8.1317px;
+  top: -12.3744px;
   border-top: solid 1.4142px #c7c7b2;
   border-right: solid 1.4142px #c7c7b2;
 }
 
 .hexagon:after {
-  bottom: -8.1317px;
+  bottom: -12.3744px;
   border-bottom: solid 1.4142px #c7c7b2;
   border-left: solid 1.4142px #c7c7b2;
 }
 
+.hexagon.black {
+  background-color: #343434;
+}
+
+.hexagon.white {
+  background-color: #ffffff;
+}
+
 .hexagon.yellow {
   background-color: #f3f146;
+}
+
+.hexagon.blue {
+  background-color: #47b2e5;
+}
+
+.hexagon.red {
+  background-color: #fe6d70;
+}
+
+.hexagon.green {
+  background-color: #99d536;
 }
 
 /* Pages */
@@ -1547,8 +1572,37 @@ textarea {
   color: #3e5a69;
 }
 .cart-section-item .cart-description .tags .tag .hexagon {
+  position: relative;
+  width: 23px;
+  height: 13.28px;
+  margin: 6.64px 0;
+  border-left: solid 1px #c7c7b2;
+  border-right: solid 1px #c7c7b2;
   float: right;
   margin-left: 5px;
+}
+.cart-section-item .cart-description .tags .tag .hexagon:before,
+.cart-section-item .cart-description .tags .tag .hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 16.26px;
+  height: 16.26px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 2.3683px;
+}
+.cart-section-item .cart-description .tags .tag .hexagon:before {
+  top: -8.1317px;
+  border-top: solid 1.4142px #c7c7b2;
+  border-right: solid 1.4142px #c7c7b2;
+}
+.cart-section-item .cart-description .tags .tag .hexagon:after {
+  bottom: -8.1317px;
+  border-bottom: solid 1.4142px #c7c7b2;
+  border-left: solid 1.4142px #c7c7b2;
 }
 .cart-section-item .cart-price {
   width: 30%;
@@ -1797,8 +1851,26 @@ textarea {
 .shop-items-title.blue:after {
   border-top: 5px solid #558ba7;
 }
+.shop-items-title.orange {
+  background: #e99235;
+}
+.shop-items-title.orange:after {
+  border-top: 5px solid #e99235;
+}
+.shop-items-title.green {
+  background: #8cb94b;
+}
+.shop-items-title.green:after {
+  border-top: 5px solid #8cb94b;
+}
+.shop-items-title.red {
+  background: #e6555a;
+}
+.shop-items-title.red:after {
+  border-top: 5px solid #e6555a;
+}
 .shop-items-content {
-  padding: 30px 40px 45px;
+  padding: 30px 50px 45px;
   border-top: 1px solid #cbcbcb;
 }
 .shop-items-content p {
@@ -1869,6 +1941,94 @@ textarea {
 }
 .shop-items-price:after {
   right: 10%;
+}
+.shop-items-main .shop-items-content {
+  min-height: 360px;
+  padding: 30px 50px 30px;
+}
+.shop-items-main .shop-items-content .color-choice {
+  text-align: left;
+  padding-top: 70px;
+}
+.shop-items-main .shop-items-content .color-choice p {
+  font-family: "KiroLight";
+  font-size: 21px;
+  color: #214a5f;
+  border-bottom: 1px dashed #8f9195;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.shop-items-main .shop-items-content .color-choice .tab-holder {
+  border-bottom: 1px dashed #8f9195;
+  padding-bottom: 20px;
+}
+.shop-items-main .shop-items-content .color-choice .nav-tabs {
+  border-color: transparent;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.shop-items-main .shop-items-content .color-choice .nav-tabs li {
+  display: inline-block;
+  float: none;
+}
+.shop-items-main .shop-items-content .color-choice .nav-tabs li a {
+  padding: 0;
+  background: none;
+  border-color: transparent;
+}
+.shop-items-main .shop-items-content .color-choice .nav-tabs li .hexagon {
+  opacity: .8;
+}
+.shop-items-main .shop-items-content .color-choice .nav-tabs li.active .hexagon {
+  opacity: 1;
+  border-color: #eaa233;
+}
+.shop-items-main .shop-items-content .color-choice .nav-tabs li.active .hexagon:before, .shop-items-main .shop-items-content .color-choice .nav-tabs li.active .hexagon:after {
+  border-color: #eaa233;
+}
+.shop-items-main .shop-items-content .color-choice .tab-content {
+  padding: 2px 0;
+  font-family: "KiroLight";
+  font-size: 19px;
+  color: #214a5f;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid #aaa6a2;
+  text-align: center;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+}
+.shop-items-main .shop-items-content .content-section {
+  padding: 20px 0;
+  border-bottom: 1px dashed #8f9195;
+}
+.shop-items-main .shop-items-content .content-section:first-child {
+  padding-top: 0;
+}
+.shop-items-main .shop-items-content .content-section:last-child {
+  border-color: transparent;
+}
+.shop-items-main.first .shop-items-content {
+  background: url(../img/goods/wolf1.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+.shop-items-main.second .shop-items-content {
+  background: url(../img/goods/wolf2.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+}
+.shop-items-main.third .shop-items-content {
+  background: url(../img/goods/wolf3.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
 }
 
 .shop-items-section .carousel-holder {

@@ -224,6 +224,7 @@ textarea {
     font-size: 17px;
     padding: 10px 20px;
     text-transform: uppercase;
+    color: $white;
     @include border-radius (10px 0 10px 0);
     @include transition (all, 0.3s, linear);
     border: {
@@ -232,7 +233,6 @@ textarea {
     }
     &-blue {
         background: #3b7492;
-        color: $white;
         border-color: #0a3348;
         &:hover {
           background: #184b66;
@@ -240,18 +240,23 @@ textarea {
     }
     &-orange {
         background: #e99235;
-        color: $white;
         border-color: #04283b;
         &:hover {
-          background: #9c580f;
+          background: #ca7a24;
         }
     }
     &-green {
         background: #90b83a;
-        color: $white;
         border-color: #04283b;
         &:hover {
           background: #749925;
+        }
+    }
+    &-red {
+        background: #e6555a;
+        border-color: #04283b;
+        &:hover {
+          background: #c43c41;
         }
     }
 }

@@ -61,9 +61,41 @@
                         color: #3e5a69;
                     }
                     .hexagon {
-                        float: right;
-                        margin-left: 5px;
-                    }
+                          position: relative;
+                          width: 23px;
+                          height: 13.28px;
+                          margin: 6.64px 0;
+                          border-left: solid 1px #c7c7b2;
+                          border-right: solid 1px #c7c7b2;
+                            float: right;
+                            margin-left: 5px;
+                        }
+
+                        .hexagon:before,
+                        .hexagon:after {
+                          content: "";
+                          position: absolute;
+                          z-index: 1;
+                          width: 16.26px;
+                          height: 16.26px;
+                          -webkit-transform: scaleY(0.5774) rotate(-45deg);
+                          -ms-transform: scaleY(0.5774) rotate(-45deg);
+                          transform: scaleY(0.5774) rotate(-45deg);
+                          background-color: inherit;
+                          left: 2.3683px;
+                        }
+
+                        .hexagon:before {
+                          top: -8.1317px;
+                          border-top: solid 1.4142px #c7c7b2;
+                          border-right: solid 1.4142px #c7c7b2;
+                        }
+
+                        .hexagon:after {
+                          bottom: -8.1317px;
+                          border-bottom: solid 1.4142px #c7c7b2;
+                          border-left: solid 1.4142px #c7c7b2;
+                        }
                 }
             }
         }

@@ -56,22 +56,23 @@
         .btn-holder {
             @include clearfix;
             padding-right: 40px;
-            img {
+            img.paypal {
                 float: right;
-                margin-right: 30px;
             }
             .btn-small {
                 float: right;
                 padding: 10px 40px;
+                margin-left: 30px;
             }
             @media #{$mobile} {
                 text-align: center;
                 padding-right: 0;
-                img, .btn-small {
+                img.paypal, .btn-small {
                     float: none;
                     width: 80%;
+                    margin-left: 0;
                 }
-                img {
+                img.paypal {
                     margin-top: 10px;
                 }
             }

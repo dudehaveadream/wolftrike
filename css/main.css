@@ -378,6 +378,10 @@ textarea {
   border-width: 3px;
   border-style: solid;
 }
+.btn-small img {
+  margin: 0;
+  margin-left: 5px;
+}
 .btn-small-blue {
   background: #3b7492;
   border-color: #0a3348;
@@ -1797,24 +1801,25 @@ textarea {
   display: table;
   clear: both;
 }
-.cart-form-checkout .btn-holder img {
+.cart-form-checkout .btn-holder img.paypal {
   float: right;
-  margin-right: 30px;
 }
 .cart-form-checkout .btn-holder .btn-small {
   float: right;
   padding: 10px 40px;
+  margin-left: 30px;
 }
 @media only screen and (max-width: 767px) {
   .cart-form-checkout .btn-holder {
     text-align: center;
     padding-right: 0;
   }
-  .cart-form-checkout .btn-holder img, .cart-form-checkout .btn-holder .btn-small {
+  .cart-form-checkout .btn-holder img.paypal, .cart-form-checkout .btn-holder .btn-small {
     float: none;
     width: 80%;
+    margin-left: 0;
   }
-  .cart-form-checkout .btn-holder img {
+  .cart-form-checkout .btn-holder img.paypal {
     margin-top: 10px;
   }
 }
@@ -1934,7 +1939,7 @@ textarea {
   background: #558ba7;
 }
 .shop-items-bottom .btn-small {
-  padding: 10px 50px;
+  padding: 10px 40px;
   display: block;
   max-width: 240px;
   margin: -20px auto 0;

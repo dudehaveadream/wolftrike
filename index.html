@@ -8,6 +8,7 @@
 
     <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet" type="text/css" />
   <link href="css/owl.carousel.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
 
@@ -117,19 +118,19 @@
   <div class="section traits-section">
     <div class="container">
       <div class="row">
-        <div class="col-sm-3 traits-section-item">
+        <div class="col-sm-3 traits-section-item wow zoomInDown" data-wow-delay="400ms">
           <div class="image-holder"><img src="img/traits/1.png" alt=""></div>
           <p>SPEED UP TO 50 MHP</p>
         </div>
-        <div class="col-sm-3 traits-section-item">
+        <div class="col-sm-3 traits-section-item wow zoomInDown" data-wow-delay="800ms">
           <div class="image-holder"><img src="img/traits/2.png" alt=""></div>
           <p>1 HOUR RUN TIME</p>
         </div>
-        <div class="col-sm-3 traits-section-item">
+        <div class="col-sm-3 traits-section-item wow zoomInDown" data-wow-delay="1200ms">
           <div class="image-holder"><img src="img/traits/3.png" alt=""></div>
           <p>12 MILE RANGE</p>
         </div>
-        <div class="col-sm-3 traits-section-item">
+        <div class="col-sm-3 traits-section-item wow zoomInDown" data-wow-delay="1600ms">
           <div class="image-holder"><img src="img/traits/4.png" alt=""></div>
           <p>3 HOUR CHARGE</p>
         </div>
@@ -266,6 +267,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
   <script src="js/owl.carousel.js"></script>
+  <script src="js/wow.js" type="text/javascript"></script>
   <script>
       $('a[href^="#go"], a[href^="."]').click( function(){ // если в href начинается с # или ., то ловим клик
           var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href
@@ -275,6 +277,16 @@
             return false; // выключаем стандартное действие
         });
 
+            wow = new WOW(
+              {
+                animateClass: 'animated',
+                offset:       100,
+                callback:     function(box) {
+                  console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                }
+              }
+            );
+            wow.init();
 
       $('.gallery').owlCarousel({
         center: true,

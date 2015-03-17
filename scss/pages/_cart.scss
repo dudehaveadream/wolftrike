@@ -1,0 +1,194 @@
+.cart-section {
+    &-inner {
+        padding: 100px 0;
+        .title-holder {
+            overflow: hidden;
+        }
+        .title {
+            margin-bottom: 25px;
+        }
+    }
+    &-item {
+        border: 1px solid #919191;
+        position: relative;
+        margin-bottom: 20px;
+        @include clearfix;
+        @include border-radius (3px);
+        @include box-shadow (4px 4px 0 #e7e7e7);
+        .close {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-family: 'KiroBold';
+            font-size: 14px;
+            color: #415e6d;
+            opacity: 1;
+        }
+        .cart-image,
+        .cart-description,
+        .cart-price {
+            vertical-align: middle;
+            display: table-cell;
+            padding: 15px;
+        }
+        .cart-image {
+            width: 25%;
+            border-right: 1px solid #919191;
+        }
+        .cart-description {
+            width: 45%;
+            border-right: 1px solid #919191;
+            p {
+                font-family: 'KiroLight';
+                font-size: 15px;
+                color: #5a6971;
+                text-align: justify;
+                margin-bottom: 5px;
+            }
+            .tags {
+                text-align: right;
+                .tag {
+                    display: inline-block;
+                    padding: 5px;
+                    border: 1px solid #b0b0b0;
+                    @include border-radius (2px);
+                    span {
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        display: inline-block;
+                        font-family: 'KiroLight';
+                        font-size: 16px;
+                        color: #3e5a69;
+                    }
+                    .hexagon {
+                        float: right;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+        .cart-price {
+            width: 30%;
+            padding-bottom: 20px;
+            @include clearfix;
+            .cart-name {
+                float: left;
+                width: 75%;
+                text-align: right;
+                padding-right: 20px;
+                h5 {
+                    font-family: 'KiroBold';
+                    text-transform: uppercase;
+                    font-size: 23px;
+                    color: #c8600c;
+                    margin-bottom: 10px;
+                }
+                .price {
+                    font-family: 'KiroLight';
+                    font-size: 35px;
+                    color: #3b7492;
+                    letter-spacing: 2px;
+                }
+            }
+            .cart-count {
+                float: right;
+                width: 75px;
+                border: 1px solid #acacac;
+                position: relative;
+                @include border-radius (3px);
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    right: 9px;
+                    width: 19px;
+                    height: 1px;
+                    background: #3b7492;
+                }
+                input {
+                    padding: 15px 10px;
+                    border: none;
+                    width: 50%;
+                    font-family: 'KiroExtraLight';
+                    font-size: 30px;
+                    color: #415e6d;
+                    border-right: 1px solid #acacac;
+                }
+                .minus, .plus {
+                    position: absolute;
+                    right: 13px;
+                    border-left: 6px solid transparent;
+                    border-right: 6px solid transparent;
+                    cursor: pointer;
+                }
+                .plus {
+                    border-bottom: 10px solid #3b7492;
+                    top: 15px;
+                }
+                .minus {
+                    border-top: 10px solid #3b7492;
+                    bottom: 15px;
+                }
+            }
+            @media #{$desktop} {
+                .cart-name {
+                    float: none;
+                    width: 100%;
+                }
+                .cart-count {
+                    float: none;
+                    margin: 10px auto 0;
+                }
+            }
+        }
+        @media #{$mobile} {
+            .cart-image,
+            .cart-description,
+            .cart-price {
+                display: block;
+                width: 100%;
+            }
+            .cart-image {
+                border: none;
+            }
+            .cart-description {
+                border: none;
+            }
+        }
+    }
+    .cart-submit {
+        text-align: right;
+        span {
+            letter-spacing: 1px;
+        }
+        .items {
+            float: left;
+        }
+        .items, .included {
+            font-family: 'KiroLight';
+            font-size: 15px;
+            color: #556269;
+        }
+        p {
+            font-family: 'KiroLight';
+            font-size: 32px;
+            color: #758790;
+            span {
+                color: #3f5d6d;
+            }
+        }
+        hr {
+            margin: 10px 0;
+            border-color: #acacac;
+        }
+        .btn-small {
+            padding: 10px 45px;
+        }
+    }
+}
+
+
+
+
+
+

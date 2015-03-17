@@ -2,6 +2,80 @@
     @include clearfix;
     padding-top: 28px;
     padding-bottom: 20px;
+    &-cart {
+        max-width: 320px;
+        float: right;
+        margin-right: 70px;
+        padding-top: 15px;
+        @include clearfix;
+        .text-holder {
+            float: left;
+            text-align: right;
+            padding-right: 15px;
+            p {
+                font-family: 'KiroLight';
+                font-size: 20px;
+                color: #223e43;
+                margin-bottom: 2px;
+            }
+            .price {
+                font-family: 'KiroBold';
+                font-size: 20px;
+                height: 20px;
+                display: inline-block;
+                color: #21556b;
+                border-left: 2px solid #21556b;
+                padding-left: 10px;
+            }
+        }
+        .btn-holder {
+            float: right;
+            a {
+                font-family: 'KiroLight';
+                width: 135px;
+                display: block;
+                background: #62b137;
+                font-size: 20px;
+                color: $white;
+                padding: 10px 15px 12px;
+                position: relative;
+                @include transition (all, 0.3s, linear);
+                span {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 100%;
+                    width: 41px;
+                    text-align: center;
+                    padding-top: 13px;
+                    background: #89d360;
+                    @include transition (all, 0.3s, linear);
+                }
+                &:hover {
+                    background: #4d9527;
+                    span {
+                        background: #75ba4e;
+                    }
+                }
+            }
+        }
+        @media #{$desktop} {
+            margin-right: 20px
+        }
+        @media #{$tablet} {
+            float: none;
+            margin: auto;
+            padding-top: 100px;
+        }
+        @media #{$mobile} {
+            padding-top: 30px;
+            .btn-holder {
+                a {
+                    text-align: left;
+                }
+            }
+        }
+    }
     &-single {
         background: url(../img/bg/header_bg.jpg) center;
         @include background-size (cover);

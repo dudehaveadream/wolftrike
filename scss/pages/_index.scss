@@ -37,6 +37,11 @@
         top: 0;
         left: 50%;
         margin-left: -136px;
+        @media #{$tablet} {
+            img {
+                width: 250px;
+            }
+        }
         @media #{$mobile} {
             position: static;
             display: block;
@@ -175,10 +180,10 @@
             }
         }
     }
-    @media #{$mobile} {
+    @media #{$tablet} {
         padding: 60px 0;
         img {
-            width: 100%;
+            max-width: 100%;
         }
         .description {
             position: static;

@@ -64,6 +64,23 @@
                 float: right;
                 padding: 10px 40px;
             }
+            @media #{$mobile} {
+                text-align: center;
+                padding-right: 0;
+                img, .btn-small {
+                    float: none;
+                    width: 80%;
+                }
+                img {
+                    margin-top: 10px;
+                }
+            }
+        }
+        @media #{$mobile} {
+            p {
+                padding-right: 0;
+                text-align: center;
+            }
         }
     }
 }

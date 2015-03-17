@@ -506,6 +506,9 @@ textarea {
   .header-cart .btn-holder a {
     text-align: left;
   }
+  .header-cart .text-holder {
+    max-width: 130px;
+  }
 }
 .header-single {
   background: url(../img/bg/header_bg.jpg) center;
@@ -1801,6 +1804,25 @@ textarea {
 .cart-form-checkout .btn-holder .btn-small {
   float: right;
   padding: 10px 40px;
+}
+@media only screen and (max-width: 767px) {
+  .cart-form-checkout .btn-holder {
+    text-align: center;
+    padding-right: 0;
+  }
+  .cart-form-checkout .btn-holder img, .cart-form-checkout .btn-holder .btn-small {
+    float: none;
+    width: 80%;
+  }
+  .cart-form-checkout .btn-holder img {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .cart-form-checkout p {
+    padding-right: 0;
+    text-align: center;
+  }
 }
 
 .shop-items-inner {
